@@ -1,1 +1,1 @@
-web: gunicorn myproject.wsgi
+web: gunicorn kms_backend.wsgi --log-file -

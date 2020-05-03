@@ -111,6 +111,7 @@ def delete(request):
     }
     return JsonResponse(response_data)
 
+
 @csrf_exempt
 def update(request):
     db = firestore.client()
