@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
-
+import django_heroku
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 from django.contrib import staticfiles
 from django.template.context_processors import static
@@ -28,6 +28,7 @@ SECRET_KEY = ')fp@ljse1yt8s73t)t5$&293=cnd2*&1wsm9r+8c5&y2=%b)q1'
 DEBUG = False
 
 ALLOWED_HOSTS = []
+django_heroku.settings(locals())
 
 # Application definition
 
